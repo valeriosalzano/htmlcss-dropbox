@@ -5,11 +5,36 @@
 }
 .flexed{
     display: flex;
+    flex-wrap: wrap;
 }
-.sized{
+.sized-large{
     max-width: 1170px;
-    width: 80%;
+    padding: 0 1vw;
     margin: 0 auto;
+}
+.sized-thin{
+    max-width: 1170px;
+    padding: 0 5vw;
+    margin: 0 auto;
+}
+.w-30{
+    width: 30%;
+}
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+.w-100{
+    width: 100%;
+}
+.col{
+    margin: 20px 0;
+}
+.cols{
+    margin: 20px 0;
+    justify-content: space-between;
 }
 
 .blue.btn{
@@ -18,6 +43,26 @@
 }
 
 /* debug */
+.debug .col{
+    height: 300px;
+}
+.debug .w-100{
+    background-color: greenyellow
+}
+.debug .w-30{
+    background-color: greenyellow;
+}
+.debug .w-40{
+    background-color: lightgreen;
+}
+.debug .w-60{
+    background-color: darkolivegreen;
+}
+.debug .cols{
+    background-color: green;
+}
+
+
 .debug header{
     background-color: aqua;
 }
@@ -37,8 +82,22 @@
     height: 30px;
 }
 
+.debug .jumbotron{
+    background-color: ;
+}
+.debug h1{
+    background-color: red;
+}
 
+.debug h2{
+    background-color: orange;
+}
 
+.debug .radio-btns{
+    width: 200px;
+    height: 30px;
+    background-color: lightgray;
+}
 /* CSS rules */
 
 /* header */
@@ -61,4 +120,16 @@ header .menu-container{
 /* main */
 main .jumbotron{
     background-color: #B4D0E7;
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+main h1{
+    margin-bottom: 50px;
+}
+
+main h2{
+    margin-bottom: 30px;
+}
+.plans .radio-btns{
+    margin-bottom: 30px;
 }
