@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>DropBox copy</title>
     </head>
     
@@ -12,16 +13,26 @@
         <!-- header -->
         <header class="flexed fixed-top">
 
-            <div id="header-logo"></div>
+            <a id="header-logo" href="#"><img src="img/logo-small.png" alt="dropbox logo"></a>
 
             <div class="menu-box flexed">
                 <nav class="l-menu">
+                    <ul class="flexed">
+                        <li><a href="#">elementolista</a></li>
+                        <li><a href="#">elementolista</a></li>
+                        <li><a href="#">elementolista</a></li>
+                    </ul>
                 </nav>
                 <nav class="r-menu">
+                    <ul class="flexed">
+                        <li><a href="#">elementolista</a></li>
+                        <li><a href="#">elementolista</a></li>
+                        <li><a href="#">elementolista</a></li>
+                    </ul>
                 </nav>
             </div>
 
-            <div id="header-btn" class="blue btn"></div>
+            <a href="#" id="header-btn" class="blue btn small">Inizia</a>
 
         </header>
 
@@ -32,19 +43,25 @@
                     <h1>JumbotronTitle</h1>
                     <div class="cols flexed">
                         <div class="w-40 col">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt illo quisquam. Sapiente, quibusdam odit! In quia veritatis fugit consequatur architecto error officia deleniti enim impedit blanditiis tempore, ipsam ex.</p>
+                            <a class="btn blue big" href="#">Inizia la prova gratuita</a>
+                            <div>Annulla in qualsiasi momento</div>
+                            <a id="internal-link"href="#plans"><i class="fa-solid fa-arrow-down"></i></a>
                         </div>
-                        <div class="w-60 col">
-                            <img src="" alt="img">
+                        <div class="w-60 img col">
+                            <img src="img/jumbo.png" alt="dropbox business example image">
                         </div>
                     </div>
                 </div>
             </div>
 
+            <a name="plans"></a>
             <section class="plans">
                 <div class="box sized-thin">
                     <h2>SectionTitle</h2>
                     <div class="radio-btns">
-
+                        <span class="circle"></span> Fatturazione mensile
+                        <span class="circle"></span> Fatturazione annuale
                     </div>
 
                     <div class="cols flexed">
