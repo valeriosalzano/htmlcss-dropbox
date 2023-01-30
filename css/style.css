@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flexed{
+    display: flex;
+}
+.sized{
+    max-width: 1170px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blue.btn{
+    color: white;
+    background-color: #0061FF;
+}
+
+/* debug */
+.debug header{
+    background-color: aqua;
+}
+.debug #header-logo{
+    height: 30px;
+    width: 60px;
+    background-color: blue;
+}
+.debug header nav{
+    width: 300px;
+    height: 50px;
+    background-color: lightblue;
+}
+.debug #header-btn
+{
+    width: 50px;
+    height: 30px;
+}
+
+
+
+/* CSS rules */
+
+/* header */
+header{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+header .menu-container{
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* main */
+main .jumbotron{
+    background-color: #B4D0E7;
+}
