@@ -17,6 +17,9 @@
     padding: 0 5vw;
     margin: 0 auto;
 }
+.w-20{
+    width: 20%;
+}
 .w-30{
     width: 30%;
 }
@@ -32,20 +35,21 @@
 .col{
     margin: 20px 0;
 }
+.col.text{
+    flex-grow: 1;
+}
 .cols{
     margin: 20px 0;
     justify-content: space-between;
 }
-
 .blue.btn{
     color: white;
     background-color: #0061FF;
 }
-
-/* debug */
-.debug .col{
-    height: 300px;
+ul{
+    list-style: none;
 }
+/* debug */
 .debug .w-100{
     background-color: greenyellow
 }
@@ -58,10 +62,20 @@
 .debug .w-60{
     background-color: darkolivegreen;
 }
+.debug .col{
+    height: 300px;
+    border: dashed 2px white;
+}
+.debug.col.text{
+    background-color: yellow;
+}
 .debug .cols{
     background-color: green;
+    border: dashed 2px black;
 }
-
+.debug section{
+    border: dotted 2px black;
+}
 
 .debug header{
     background-color: aqua;
@@ -98,6 +112,28 @@
     height: 30px;
     background-color: lightgray;
 }
+
+.debug .partners .grid-block{
+    background-color: purple;
+}
+.debug .partners .square{
+    background-color: pink;
+    border: dashed 1px black;
+}
+.debug .partners .center{
+    background-color: violet;
+}
+
+.debug .question{
+    height: 60px;
+    background-color:indigo;
+}
+
+.debug footer .box.language{
+    height: 50px;
+    width: 200px;
+    background-color: darkgray;
+}
 /* CSS rules */
 
 /* header */
@@ -112,7 +148,7 @@ header{
     left: 0;
     z-index: 9;
 }
-header .menu-container{
+header .menu-box{
     justify-content: space-between;
     flex-grow: 1;
 }
@@ -132,4 +168,51 @@ main h2{
 }
 .plans .radio-btns{
     margin-bottom: 30px;
+}
+
+main section{
+    margin-bottom: 100px;
+}
+section.partners{
+    flex-wrap: nowrap;
+}
+section.partners .grid-block{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
+section.partners .square{
+    width: 50%;
+    height: 50%;
+}
+section.partners{
+    margin-bottom: 0;
+}
+
+section.free-trial{
+    background-color: #B4D0E7;
+}
+
+.faq h2{
+    padding-bottom: 30px;
+    border-bottom: solid 1px grey;
+}
+.faq .question-box{
+    border-bottom: solid 1px grey;;
+}
+
+/* footer */
+footer{
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+}
+footer h3{
+    margin-bottom: 20px;
+}
+footer li{
+    line-height: 30px;
+}
+footer .box.language{
+    display: inline-block;
+    border-top: solid 1px white;
 }
