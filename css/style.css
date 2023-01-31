@@ -15,6 +15,9 @@ html{
 .wrapped{
     flex-wrap: wrap;
 }
+.justified-sb{
+    justify-content: space-between;
+}
 .sized-large{
     max-width: 1170px;
     padding: 0 1vw;
@@ -25,6 +28,7 @@ html{
     padding: 0 5vw;
     margin: 0 auto;
 }
+
 img{
     width: 100%;
 }
@@ -62,7 +66,6 @@ img{
 }
 .cols{
     margin: 20px 0;
-    /* justify-content: space-between; */
 }
 a{
     padding: 5px;
@@ -77,11 +80,20 @@ a{
 .blue.btn{
     color: white;
     background-color: #0061FF;
+    transition: all 0.5s;
+}
+.blue.btn:hover{
+    background-color: #649fff;
 }
 .white.btn{
     color: black;
     background-color: white;
     border: solid 1px black;
+    transition: all 0.5s;
+}
+.white.btn:hover{
+    background-color: black;
+    color: white;
 }
 .btn.big{
     padding: 10px 20px;
@@ -185,11 +197,12 @@ h4{
     background-color:indigo;
 } */
 
-.debug footer .box.language{
+/* .debug footer .box.language{
     height: 50px;
     width: 200px;
     background-color: darkgray;
-}
+} */
+
 /* CSS rules */
 
 /* header */
@@ -205,11 +218,9 @@ header{
     overflow-y: hidden;
 }
 header nav{
-    justify-content: space-between;
     align-items: center;
 }
 header .menu-box{
-    justify-content: space-between;
     margin: 0 10px;
     flex-grow: 1;
 }
@@ -265,9 +276,6 @@ main .btn{
     margin-left: 20px;
 }
 
-#plans .cols{
-    justify-content: space-between;
-}
 #plans .col{
     font-size: 14px;
     border: solid 1px #D0D0D3;
@@ -312,6 +320,10 @@ main .btn{
 
 #lf-partner .text.col{
     padding: 50px;
+}
+
+#features .cols{
+    
 }
 
 #partners{
@@ -421,6 +433,8 @@ footer a{
     color: white;
 }
 footer .box.language{
+    color: #999999;
     display: inline-block;
+    padding: 20px 10px 20px 0;
     border-top: solid 1px white;
 }
