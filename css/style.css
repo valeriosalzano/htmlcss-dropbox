@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 html{
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
 }
+
+/* utilities */
 .flexed{
     display: flex;
+}
+.wrapped{
     flex-wrap: wrap;
 }
 .sized-large{
@@ -36,11 +41,18 @@ html{
 .w-60{
     width: 60%;
 }
+.w-70{
+    width: 70%;
+}
 .w-100{
     width: 100%;
 }
+.h-100{
+    height: 100%;
+}
 .col{
-    margin: 20px 0;
+    margin-top: 20px;
+    min-width: 300px;
 }
 .col.text{
     flex-grow: 1;
@@ -49,8 +61,15 @@ html{
     margin: 20px 0;
     justify-content: space-between;
 }
+a{
+    padding: 5px;
+    text-decoration: none;
+}
 .btn{
-    
+    font-weight: 400;
+}
+.blue i{
+    color: blue;
 }
 .blue.btn{
     color: white;
@@ -62,15 +81,24 @@ html{
 .btn.small{
     padding: 5px 15px;
 }
-a{
-    display: inline-block;
-    text-decoration: none;
-}
 ul{
     list-style: none;
 }
-p{
-    line-height: 140%;
+h1{
+    font-size: 50px;
+    margin: 50px 0;
+}
+h2{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 /* debug */
 /* .debug .w-100{
@@ -133,14 +161,14 @@ p{
     background-color: lightgray;
 } */
 
-.debug .partners .grid-block{
+.debug .squares .grid-block{
     background-color: purple;
 }
-.debug .partners .square{
+.debug .squares .square{
     background-color: pink;
     border: dashed 1px black;
 }
-.debug .partners .center{
+.debug .squares .center{
     background-color: violet;
 }
 
@@ -158,143 +186,124 @@ p{
 
 /* header */
 header{
-    flex-wrap: nowrap;
     background-color: white;
     height: 80px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
     padding: 0 20px;
 }
-header .menu-box{
-    height: 100%;
+header nav{
     justify-content: space-between;
+    align-items: center;
+}
+header .menu-box{
+    justify-content: space-between;
+    margin: 0 10px;
     flex-grow: 1;
 }
-header ul{
-    flex-wrap: nowrap;
-}
-header li{
-    font-size: 14px;
-    height: 80px;
-    line-height: 70px;
-}
-header nav a{
+header .menu-box a{
     color: black;
-    padding: 5px;
     margin: 0 10px;
+    line-height: 80px;
+}
+header li:hover {
+    border-bottom: solid 2px black;
 }
 
 /* main */
 main section{
     padding: 100px 0;
 }
-main h1{
-    font-size: 50px;
-    margin: 50px 0;
-}
-main h2{
-    font-size: 35px;
-    margin-bottom: 50px;
-}
-main h3{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-main h4{
-    margin-bottom: 20px;
-}
-
-main .jumbotron{
-    background-color: #B4D0E7;
-    padding-bottom: 0;
-}
-.jumbotron .btn{
+main .btn{
     display: inline-block;
     margin: 30px 0;
 }
-.jumbotron #internal-link{
+
+#jumbotron{
+    background-color: #B4D0E7;
+    padding-bottom: 0;
+}
+#jumbotron #internal-link{
     display: inline-block;
-    font-size: 30px;
-    margin: 50px 0 -10px 0;
+    font-size: 50px;
+    margin: 50px 0 10px;
     color: black;
 }
-.jumbotron .img.col{
+#jumbotron .img.col{
     position: relative;
 }
-.jumbotron img{
+#jumbotron img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.plans .radio-btns{
-    margin-bottom: 30px;
-}
-.plans .circle{
+#plans .circle{
     display: inline-block;
     height: 15px;
     width: 15px;
     border-radius: 50%;
     border: solid 1px gray;
 }
-.radio-btns span:active{
+#plans .circle:active{
     border: solid 3px blue;
 }
-.radio-btns span:nth-of-type(2){
+.radio-btns .circle:nth-of-type(2){
     margin-left: 20px;
 }
 
-.plans .col{
+#plans .col{
     font-size: 14px;
     border: solid 1px #D0D0D3;
 }
-.plans li{
-    margin: 15px 0;
-}
-li.blue i{
-    color: blue;
-}
-.plans .col .target{
+#plans .col .top{
     text-align: center;
     border-bottom: solid 1px #D0D0D3;
     padding: 10px;
 }
-.plans .col .details{
+#plans .col .bottom{
     padding: 30px;
 }
-li.cost-division{
-    color: gray;
-    margin-bottom: 20px;
+#plans .col li{
+    margin: 5px 0;
 }
-.plans a.btn{
+#plans .col .cost-division{
+    color: gray;
+    margin-bottom: 30px;
+}
+#plans a.btn{
+    font-size: 16px;
     text-align: center;
     width: 100%;
-    margin: 20px 0;
+    margin: 30px 0 20px;
 }
-.gray-line{
+#plans .buy-now{
+    text-decoration: underline;
+    color: blue;
+}
+#plans .gray-line{
     height: 1px;
     background-color: lightgray;
     width: 30%;
     margin: 30px 0;
 }
-section.partners{
-    flex-wrap: nowrap;
+#plans .w-100 .btn{
+    margin: 0;
 }
-section.partners .grid-block{
-    width: calc(100vw / 3);
+
+
+#partners .squares .grid-block{
+    width: calc(100% / 3);
     height: calc(100vw / 3);
 }
-section.partners .square{
+#partners .squares .square{
     width: 50%;
     height: 50%;
 }
-section.partners{
+#partners .squares{
     margin-bottom: 0;
 }
 

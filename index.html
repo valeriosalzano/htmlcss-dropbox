@@ -6,57 +6,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
         <title>DropBox copy</title>
     </head>
     
     <body class="debug">
         <!-- header -->
-        <header class="flexed fixed-top">
-
-            <a id="header-logo" href="#"><img src="img/logo-small.png" alt="dropbox logo"></a>
-
-            <div class="menu-box flexed">
-                <nav class="l-menu">
-                    <ul class="flexed">
+        <header class="fixed-top w-100">
+            <nav class="flexed h-100">
+                <a id="header-logo" href="#"><img src="img/logo-small.png" alt="dropbox logo"></a>
+                <div class="menu-box flexed h-100">
+                    <ul class="flexed l-menu">
                         <li><a href="#">Perchè Dropbox</a></li>
                         <li><a href="#">Funzioni</a></li>
                         <li><a href="#">Piani e Prezzi</a></li>
                     </ul>
-                </nav>
-                <nav class="r-menu">
-                    <ul class="flexed">
+    
+                    <ul class="flexed r-menu">
                         <li><a href="#">Supporto</a></li>
                         <li><a href="#">Contatta l'ufficio vendite</a></li>
                         <li><a href="#">Accedi</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+                
 
-            <a href="#" id="header-btn" class="blue btn small">Inizia</a>
-
+                <a href="#" id="header-btn" class="blue btn small">Inizia</a>
+            </nav>
         </header>
 
         <!-- main -->
         <main>
-            <section class="jumbotron">
+            <section id="jumbotron">
                 <div class="box sized-large">
                     <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                     <div class="cols flexed">
-                        <div class="w-40 col">
+                        <div class="w-30 col">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt illo quisquam. Sapiente, quibusdam odit! In quia veritatis fugit consequatur architecto error officia deleniti enim impedit blanditiis tempore, ipsam ex.</p>
                             <a class="btn blue big" href="#">Inizia la prova gratuita</a>
                             <div>Annulla in qualsiasi momento</div>
                             <a id="internal-link"href="#plans"><i class="fa-solid fa-arrow-down"></i></a>
                         </div>
-                        <div class="w-60 img col">
+                        <div class="w-70 img col">
                             <img src="img/jumbo.png" alt="dropbox business example image">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <a name="plans"></a>
-            <section class="plans">
+            <section id="plans">
                 <div class="box sized-thin">
                     <h2>Trova il piano business che fa per te</h2>
                     <div class="radio-btns">
@@ -64,22 +63,22 @@
                         <span class="circle"></span> Fatturazione annuale
                     </div>
 
-                    <div class="cols flexed">
+                    <div class="cols flexed wrapped">
                         <div class="w-30 col">
-                            <div class="target"><i class="fa-solid fa-user"></i> Singolo</div>
-                            <div class="details">
+                            <div class="top"><i class="fa-solid fa-user"></i> Singolo</div>
+                            <div class="bottom">
                                 <h3>Professional</h3>
                                 <ul>
                                     <li class="cost"><strong>&euro; 12.00</strong></li>
                                     <li class="cost-division">&#8725; mese</li>
-                                    <li class="users-cap indented"><i class="fa-solid fa-user"></i> 1 utente</li>
+                                    <li class="user-cap indented"><i class="fa-solid fa-user"></i> 1 utente</li>
                                     <li class="space indented"><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</li>
                                     <li class="sharing indented"><i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura</li>
                                 </ul>
                                 <a class="big blue btn" href="#">Prova gratis per 30 giorni</a>
-                                <div>oppure <a href="#">acquista ora</a></div>
+                                <div>oppure <a class="buy-now" href="#">acquista ora</a></div>
                                 <div class="gray-line"></div>
-                                <h4>planSummaryTitle</h4>
+                                <h4>Punti salienti del piano</h4>
                                 <ul>
                                     <li class="indented blue"><i class="fa-solid fa-check"></i> testotestotesto</li>
                                     <li class="indented blue"><i class="fa-solid fa-check"></i> testotestotesto</li>
@@ -87,8 +86,8 @@
                             </div>
                         </div>
                         <div class="w-30 col">
-                            <div class="target"><i class="fa-solid fa-users"></i> Team</div>
-                            <div class="details">
+                            <div class="top"><i class="fa-solid fa-users"></i> Team</div>
+                            <div class="bottom">
                                 <h3>titoloPlan</h3>
                                 <ul>
                                     <li class="cost"><strong>&euro; xxx</strong></li>
@@ -98,9 +97,9 @@
                                     <li class="sharing indented"><i class="fa-solid fa-share-nodes"></i> testotestotesto</li>
                                 </ul>
                                 <a class="big blue btn" href="#">Prova gratis per 30 giorni</a>
-                                <div>oppure <a href="#">acquista ora</a></div>
+                                <div>oppure <a class="buy-now" href="#">acquista ora</a></div>
                                 <div class="gray-line"></div>
-                                <h4>planSummaryTitle</h4>
+                                <h4>Punti salienti del piano</h4>
                                 <ul>
                                     <li class="indented blue"><i class="fa-solid fa-check"></i> testotestotesto</li>
                                     <li class="indented blue"><i class="fa-solid fa-check"></i> testotestotesto</li>
@@ -110,8 +109,8 @@
                             </div>
                         </div>
                         <div class="w-30 col">
-                            <div class="target">FAicon Target</div>
-                            <div class="details">
+                            <div class="top"> <i class="fa-solid fa-building"></i> Azienda</div>
+                            <div class="bottom">
                                 <h3>titoloPlan</h3>
                                 <ul>
                                     <li class="cost"><strong>&euro; xxx</strong></li>
@@ -121,9 +120,9 @@
                                     <li class="sharing indented"><i class="fa-solid fa-share-nodes"></i> testotestotesto</li>
                                 </ul>
                                 <a class="big blue btn" href="#">Prova gratis per 30 giorni</a>
-                                <div>oppure <a href="#">acquista ora</a></div>
+                                <div>oppure <a class="buy-now" href="#">acquista ora</a></div>
                                 <div class="gray-line"></div>
-                                <h4>planSummaryTitle</h4>
+                                <h4>Punti salienti del piano</h4>
                                 <ul>
                                     <li class="indented blue"><i class="fa-solid fa-check"></i> testotestotesto</li>
                                     <li class="indented blue"><i class="fa-solid fa-check"></i> testotestotesto</li>
@@ -132,13 +131,25 @@
                             </div>
                         </div>
                         <div class="w-100 col">
-
+                            <div class="top"> <i class="fa-solid fa-building"></i> Team</div>
+                            <div class="box flexed">
+                                <div class="text w-70 bottom">
+                                    <h3>Enterprise</h3>
+                                    <h4>Contatta l'ufficio vendite per i Prezzi</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam provident voluptas doloribus reiciendis, pariatur rem illum, eligendi ut tempora optio sint, reprehenderit sed! Sapiente veniam praesentium ratione maiores necessitatibus similique.
+                                    </p>
+                                </div>
+                                <div class="w-30 bottom">
+                                    <a class="btn blue"href="#">Contatta l'ufficio vendite</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </section>
-            <section class="partner">
+            <section id="lf-partner">
                 <div class="box sized-thin flexed">
                     <div class="w-60 col">
                         <img src="" alt="img">
@@ -148,7 +159,7 @@
                 </div>
             </section>
 
-            <section class="functions">
+            <section id="functions">
                 <div class="box sized-thin">
                     <div class="cols flexed">
                         <div class="w-30 col">
@@ -174,46 +185,48 @@
                 </div>
             </section>
 
-            <section class="users">
+            <section id="partners">
                 <div class="box sized-thin">
                     <h2>sectionTitle</h2>
                     <a href="#">link</a>
                 </div>
+
+                <div class="squares flexed">
+                    <div class="grid-block left flexed wrapped">
+                        <div id="company-1" class="square">
+    
+                        </div>
+                        <div id="company-2" class="square">
+    
+                        </div>
+                        <div id="company-3" class="square">
+    
+                        </div>
+                        <div id="company-4" class="square">
+    
+                        </div>
+                    </div>
+                    <div class="grid-block center">
+    
+                    </div>
+                    <div class="grid-block right flexed wrapped">
+                        <div id="company-5" class="square">
+    
+                        </div>
+                        <div id="company-6" class="square">
+    
+                        </div>
+                        <div id="company-7" class="square">
+    
+                        </div>
+                        <div id="company-8" class="square">
+    
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="partners flexed">
-                <div class="grid-block left flexed">
-                    <div id="company-1" class="square">
-
-                    </div>
-                    <div id="company-2" class="square">
-
-                    </div>
-                    <div id="company-3" class="square">
-
-                    </div>
-                    <div id="company-4" class="square">
-
-                    </div>
-                </div>
-                <div class="grid-block center">
-
-                </div>
-                <div class="grid-block right flexed">
-                    <div id="company-5" class="square">
-
-                    </div>
-                    <div id="company-6" class="square">
-
-                    </div>
-                    <div id="company-7" class="square">
-
-                    </div>
-                    <div id="company-8" class="square">
-
-                    </div>
-                </div>
-            </section>
+            
 
             <section class="free-trial">
                 <div class="box sized-thin flexed">
