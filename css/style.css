@@ -25,6 +25,9 @@ html{
     padding: 0 5vw;
     margin: 0 auto;
 }
+img{
+    width: 100%;
+}
 .indented{
     text-indent: -10px;
     padding: 0 10px;
@@ -51,7 +54,7 @@ html{
     height: 100%;
 }
 .col{
-    margin-top: 20px;
+    margin-top: 30px;
     min-width: 300px;
 }
 .col.text{
@@ -74,6 +77,11 @@ a{
 .blue.btn{
     color: white;
     background-color: #0061FF;
+}
+.white.btn{
+    color: black;
+    background-color: white;
+    border: solid 1px black;
 }
 .btn.big{
     padding: 10px 20px;
@@ -161,7 +169,7 @@ h4{
     background-color: lightgray;
 } */
 
-.debug .squares .grid-block{
+/* .debug .squares .grid-block{
     background-color: purple;
 }
 .debug .squares .square{
@@ -170,7 +178,7 @@ h4{
 }
 .debug .squares .center{
     background-color: violet;
-}
+} */
 
 .debug .question{
     height: 60px;
@@ -193,6 +201,7 @@ header{
     left: 0;
     z-index: 9;
     padding: 0 20px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
 }
 header nav{
     justify-content: space-between;
@@ -284,7 +293,7 @@ main .btn{
     text-decoration: underline;
     color: blue;
 }
-#plans .gray-line{
+.gray-line{
     height: 1px;
     background-color: lightgray;
     width: 30%;
@@ -293,22 +302,78 @@ main .btn{
 #plans .w-100 .btn{
     margin: 0;
 }
+#plans .w-100 .bottom{
+    min-width: 200px;
+}
 
+#lf-partner .text.col{
+    padding: 50px;
+}
 
-#partners .squares .grid-block{
+#partners{
+    padding-bottom: 0;
+}
+#partners .big-square{
     width: calc(100% / 3);
     height: calc(100vw / 3);
 }
-#partners .squares .square{
+#partners .center.big-square
+{
+    background-color: #F5F5F5;
+    padding: 30px;
+}
+#partners p{
+    width: 100%;
+    height: 60%;
+    overflow-y: auto;
+}
+#partners .square{
+    display: flex;
+    align-items: center;
+    padding: 30px;
     width: 50%;
     height: 50%;
 }
+#partners .selected.square{
+    box-shadow: inset 0 0 5px 15px rgba(255, 255, 255,0.5);
+}
+#partners .square img{
+    filter: invert(1);
+}
 #partners .squares{
-    margin-bottom: 0;
+    margin: 30px 0 0;
 }
 
-section.free-trial{
+#designit{
+    background-color: #A2D39B;
+}
+#asu{
+    background-color: #61082B;
+}
+#uf{
+    background-color: #0093CE;
+}
+#topps{
+    background-color: #FF1C1C;
+}
+#wbr{
+    background-color: #D5001F;
+}
+#hearst{
     background-color: #B4D0E7;
+}
+#lp{
+    background-color: #0D2481;
+}
+#cc{
+    background-color: #FFD830;
+}
+
+#free-trial{
+    background-color: #B4D0E7;
+}
+#free-trial .btn{
+    margin: 0 0 0 20%;
 }
 
 .faq h2{
