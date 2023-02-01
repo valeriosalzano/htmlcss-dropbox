@@ -168,16 +168,21 @@ header .top-menu > li:hover {
 .hidden.sub-menu{
     position: absolute;
     top: 80px;
+    transition: all 1.5s;
+    display: flex;
+    background-color: white;
 }
 .left.top-menu .hidden.sub-menu{
-    left: 0;
+    left: -100vw;
 }
 .right.top-menu .hidden.sub-menu{
-    right: 0;
+    right: -100vw;
 }
-header li:hover .hidden.sub-menu{
-    background-color: white;
-    display: flex;
+header .left li:hover .hidden.sub-menu{
+    transform: translate(100vw,0);
+}
+header .right li:hover .hidden.sub-menu{
+    transform: translate(-100vw,0);
 }
 .sub-box{
     min-width: 200px;
@@ -197,7 +202,21 @@ header li:hover .hidden.sub-menu{
     display: inline-block;
     color: black;
 }
-
+.sub-functions-list a{
+    display: flex;
+    align-items: center;
+}
+.sub-functions-list img{
+    width: 40px;
+    margin-right: 10px;
+}
+.sub-functions-list h4{
+    margin-bottom: 5px;
+}
+.sub-functions-list p{
+    line-height: unset;
+    color: rgb(52, 52, 52);
+}
 #header-logo img{
     height: 100%;
     width: unset;
