@@ -22,12 +22,12 @@ html{
 }
 .sized-large{
     max-width: 1170px;
-    padding: 0 1vw;
+    padding: 0 10px;
     margin: 0 auto;
 }
 .sized-thin{
     max-width: 1170px;
-    padding: 0 5vw;
+    padding: 0 100px;
     margin: 0 auto;
 }
 .min-w-200{
