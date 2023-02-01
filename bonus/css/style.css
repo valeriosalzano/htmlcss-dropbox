@@ -165,14 +165,39 @@ header .top-menu > li > a{
 header .top-menu > li:hover {
     border-bottom: solid 2px black;
 }
-header li:hover .hidden.sub-menu{
+.hidden.sub-menu{
     position: absolute;
-    top: 100%
+    top: 80px;
+}
+.left.top-menu .hidden.sub-menu{
     left: 0;
+}
+.right.top-menu .hidden.sub-menu{
+    right: 0;
+}
+header li:hover .hidden.sub-menu{
     background-color: white;
-    padding: 10px;
     display: flex;
 }
+.sub-box{
+    min-width: 200px;
+    padding: 10px;
+}
+.sub-box h4{
+    padding-left: 5px;
+}
+.sub-box li {
+    font-size: 12px;
+    padding: 5px 0;
+}
+.sub-box li a:hover{
+    text-decoration: underline;
+}
+.sub-box a {
+    display: inline-block;
+    color: black;
+}
+
 #header-logo img{
     height: 100%;
     width: unset;
