@@ -77,11 +77,18 @@ html{
     background-color: #0061FF;
     transition: all 0.5s;
 }
+.blue.btn:hover{
+    background-color: #649fff;
+}
 .white.btn{
     color: black;
     background-color: white;
     border: solid 1px black;
     transition: all 0.5s;
+}
+.white.btn:hover{
+    background-color: black;
+    color: white;
 }
 .btn.big{
     padding: 10px 20px;
@@ -150,6 +157,9 @@ header .menu-box a{
     margin: 0 5px;
     line-height: 80px;
 }
+header li:hover {
+    border-bottom: solid 2px black;
+}
 #header-logo img{
     height: 100%;
     width: unset;
@@ -191,6 +201,9 @@ main .btn{
     width: 15px;
     border-radius: 50%;
     border: solid 1px gray;
+}
+#plans .circle:active{
+    border: solid 3px blue;
 }
 .radio-btns .circle:nth-of-type(2){
     margin-left: 20px;
@@ -332,6 +345,13 @@ main .btn{
 }
 #faq .arrow{
     text-align: center;
+}
+#faq .question-box:hover .hidden{
+    display: block;
+    margin-top: 20px;
+}
+#faq .question-box:hover .arrow{
+    transform: rotate(180deg)
 }
 
 /* footer */
