@@ -30,7 +30,7 @@ html{
 }
 .sized-thin{
     max-width: 1170px;
-    padding: 100px ;
+    padding: 0 100px;
     margin: 0 auto;
 }
 .min-w-200{
